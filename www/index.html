@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+       <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;"> -->
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <meta name="color-scheme" content="light dark">
+       <!-- <link rel="stylesheet" href="css/index.css"> -->
+		<link rel="stylesheet" href="css/materialize.css">
+		<link rel="stylesheet" href="css/personalizado.css">
+		<link rel="stylesheet" href="css/icons.css">
+						
+						
+						
+		<!-- Esse código serve unicamente para inclusão do firebase ao meu projeto-The core Firebase JS SDK is always required and must be listed first -->
+		<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script>
+		<script src="js/firebase.js"></script>
+		<!-- TODO: Add SDKs for Firebase products that you want to use
+			 https://firebase.google.com/docs/web/setup#available-libraries -->
+
+		<script>	
+		(function () {
+		  //Esse código serve unicamente para inclusão do firebase ao meu projeto-	
+		  // Your web app's Firebase configuration
+		  var firebaseConfig = {
+			apiKey: "AIzaSyB4RcDaysKpLVxwTHSLaxE4uHrMTQlEBZM",
+			authDomain: "aplicativotcc-75753.firebaseapp.com",
+			databaseURL: "https://aplicativotcc-75753-default-rtdb.firebaseio.com",
+			projectId: "aplicativotcc-75753",
+			storageBucket: "aplicativotcc-75753.appspot.com",
+			messagingSenderId: "921167487590",
+			appId: "1:921167487590:web:4e53c8332cc7e8913a43a7"
+		  };
+		  // Initialize Firebase
+		  firebase.initializeApp(firebaseConfig);
+			})()				
+		</script>				
+						
+						
+							
+	   <title>My Schedule</title>
+    </head>
+    <body>
+		<header class="green lighten-2 valign-wrapper"> <h3>My Schedule</h3> </header>
+			<h6> Olá Fulano! </h6>
+			<div class="row">
+				<div class="col s6">
+					<a class="secondary content" href="agendar.html">
+						<i class="material-icons itensmenu">calendar_today</i>
+					</a>
+					<br>
+					<label class="rotulosMenu">Agendar</label>
+				</div>
+				<div class="col s6">
+					<a class="secondary content" href= "visualizar_agendamento.html">
+						<i class="material-icons itensmenu">calendar_view_month</i>
+					</a>
+					<br>
+					<label>Visualizar Agendamento</label>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col s6">
+					<a class="secondary content" href="editar_agendamento.html">
+						<i class="material-icons itensmenu">edit</i>
+					</a>
+					<br>
+					<label>Editar Agendamento</label>
+				
+				</div>
+				<div class="col s6">
+					<a class="secondary content" href="visualizar_atendimento.html">
+						<i class="material-icons itensmenu">spellcheck</i>
+					</a>
+					<br>
+					<label>Visualizar Atendimento</label>
+				
+				</div>
+			</div>	
+						
+	<script src="js/jquery.js"></script>
+	<script src="js/materialize.js"></script>
+	<!--<script src="cordova.js"></script> -->
+    <!--<script src="js/index.js"></script> -->
+    </body>
+</html>
